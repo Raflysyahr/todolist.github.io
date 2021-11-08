@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="app">
+        <div class="lists-days" id="lists-days">
+            <small>List Planning</small>
+            <ul style="padding: 0;"  id="lists-days-ul" data-lists-days>    
+            </ul>
+            <form action="" data-new-list-form>
+                <div class="field-add">
+                        <button class="btn-add-day" type="submit" id="btn-add-day">+</button>
+                        <input type="text" data-new-list-input name="add_day" id="add_day" class="add-day">
+                        
+                </div>
+            </form>
+        </div>
+        <div class="back-container-app" data-list-display-container>
+            <div class="container-app" >
+                <div class="header-app">
+                    <div class="headers">
+                        <h5 class="title-headers">Planning your in the day</h5>
+                    </div>
+                    <div class="header-footer">
+                        <h5 class="title-app" data-list-title>Task List</h5>
+                        <small class="remeaning-task" data-list-count>2 task remaning</small>
+                    </div>
+                </div>
+                <div class="body-app">
+                    <div class="container-body">
+                        <div class="wrapper-body" id="lists"  data-tasks>
+                            
+
+                        </div>
+                        <form action="" data-new-task-form>
+                            <div class="container-in">
+                                <button class="btn-add-planned" type="submit"  id="btn-add-planned">+</button>
+                                <input type="text" autofocus data-new-task-input name="planed-in" maxlength="50" id="planed-in" class="planed-in">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-app">Copyright @raflysyahr.com</div>
+            </div>
+            <div class="footer-btn">
+                <button class="done-plan" data-clear-complete-tasks-button>Done Planning</button>|
+                <button class="delete-plan" data-delete-list-button>Delete list Planning</button>
+            </div>
+        </div>
+    </div>
+    <template id="task-template">
+        
+        <div class="item-list">
+            <input type="checkbox"  name="list-btn" id="task-button" class="list-btn">
+            <label >
+                <span class="label-task"></span>
+            </label>
+        </div>
+    </template>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/app.script.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.app {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(#00ffc3c4, #00ffabb8, #0a635f);
+    display: flex;
+}
+
+.lists-days {
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    font-family: sans-serif;
+    background: white;
+    /* box-shadow: 0 0 67px #ccc9c9; */
+}
+
+.list-day {
+    position: relative;
+    list-style: none;
+    background: #00ffc31c;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-day {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #6080ff;
+    outline: none;
+}
+
+.field-add {
+    display: flex;
+    position: relative;
+}
+
+.btn-add-day {
+    border: none;
+    position: relative;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+}
+
+.btn-add-day:hover {
+    background: #3ce1d2b3;
+}
+
+.container-app {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+    /* box-shadow: 0 0 10px #bdbdbd; */
+    background: white;
+    border-radius: 10px;
+}
+
+.back-container-app {
+    margin: auto;
+
+}
+
+.headers {
+    position: relative;
+}
+
+.header-app {
+    position: relative;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.title-headers {
+    text-align: center;
+}
+
+.header-footer {
+    position: relative;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    font-family: sans-serif;
+}
+
+.body-app {
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.footer-app {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.wrapper-body {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.list-btn {
+    width: 25px;
+}
+
+.item-list {
+    position: relative;
+    width: 100%;
+    background: #00ffc31c;
+    padding: 10px 0px 10px 0px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.active-list {
+    color: red !important;
+}
+
+.planed-in {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #6080ff;
+    outline: none;
+}
+
+.btn-add {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.container-in {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.number {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    margin: 7px;
+    color: gray;
+
+}
+
+.btn-add-planned {
+    border: none;
+    position: relative;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+}
+
+.btn-add-planned:hover {
+    background: #3ce1d2b3;
+}
+
+.title-app {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    margin-right: auto;
+}
+
+.datenow {
+    position: relative;
+    color: gray;
+    padding: 10px;
+}
+
+.in-header-footer {
+    position: relative;
+    color: gray;
+    padding: 10px 0px 10px 0px;
+
+}
+
+.remeaning-task {
+    position: relative;
+    color: gray;
+    padding: 10px;
+    font-style: italic;
+}
+
+
+.footer-btn {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.done-plan {
+    position: relative;
+    background: transparent;
+    border: none;
+    color: #0e4411;
+}
+
+.delete-plan {
+    position: relative;
+    background: transparent;
+    border: none;
+    color: red;
+}
